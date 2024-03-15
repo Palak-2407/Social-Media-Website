@@ -1,0 +1,86 @@
+.App {
+  position: relative;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.popup-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgb(233, 228, 228);
+  border: 1px solid #ccc;
+  padding: 50px;
+  width: 70%; /* Set the width to 80% of the viewport width */
+  height: 50%; /* Set the height to 80% of the viewport height */
+  max-width: 600px; /* Optionally, set a maximum width to prevent the pop-up from becoming too wide */
+  max-height: 700px; /* Optionally, set a maximum height to prevent the pop-up from becoming too tall */
+  overflow: auto; /* Add overflow to enable scrolling if content exceeds pop-up size */
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.create-account-button,
+.sign-in-button {
+    background-color: #1da1f2;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin: 10px 0;
+    font-size: 16px;
+    cursor: pointer;
+    width: 100%; /* Set the width to 100% to occupy the entire width of the container */
+    box-sizing: border-box; /* Ensure padding and border are included in the width */
+}
+
+.create-account-button:hover,
+.sign-in-button:hover {
+    background-color: #0f81d1;
+}
+.happening-now {
+  margin-top: 5px;
+  margin-left: 0; /* Adjust the left margin as needed */
+}
+
+
+.popup-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.photo-container {
+  margin-right: 20px;
+}
+
+.photo {
+  width: 250px; /* Set the width to your desired size */
+  height: 250px; /* Let the height adjust automatically to maintain aspect ratio */
+}
+
+.text-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.create-account-button,
+.sign-in-button {
+  background-color: #1da1f2;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  margin: 10px 0;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.create-account-button:hover,
+.sign-in-button:hover {
+  background-color: #0f81d1;
+}
+
+.happening-now {
+margin-top: 0;
+}
